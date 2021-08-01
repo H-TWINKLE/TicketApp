@@ -1,4 +1,6 @@
 <resources>
+    <string name="play">游乐园</string>
+    <string name="film">电影票</string>
     <string name="app_name">乐行</string>
     <string name="login">登录</string>
     <string name="register">新用户注册</string>
@@ -17,7 +19,7 @@
     <string name="bus">汽车票</string>
     <string name="boat">轮船票</string>
     <string name="date">出发日期</string>
-    <string name="date_show">2015-10-12</string>
+    <string name="date_show">2018-01-02</string>
     <string name="time">出发时间</string>
     <string name="seat">席位</string>
     <string name="unlimited">不限</string>
@@ -35,6 +37,28 @@
     <string name="email_check_send">验证信息发送成功</string>
     <string name="code_tip">验证码</string>
     <string name="times">跳过 \t\t\t\t %1$d秒</string>
+    <string name="prompt_email">请输入邮箱</string>
+    <string name="prompt_code">请输入验证码</string>
+    <string name="send_code">发送验证码</string>
+    <string name="ok_code">验证验证码</string>
+    <string name="upgrade_src">修改密码</string>
+    <string name="ok">确认</string>
+    <string name="sending_code">正在发送验证码</string>
+    <string name="return_main">回到主页</string>
+    <string name="old_scr">请输入新密码</string>
+    <string name="new_scr">请确认输入新密码</string>
+    <string name="ok_src">确认修改新密码</string>
+    <string name="renew_new">两次密码输入不同</string>
+    <string name="check_src">正在验证</string>
+    <string name="error_field_required">请填写</string>
+    <string name="no_admin">该用户尚未注册</string>
+    <string name="code_isfalse">验证码不正确</string>
+    <string name="new_pass_is_right">密码修改成功</string>
+    <string name="new_pass_is_flase">密码修改失败</string>
+    <string name="permission_rationale">通讯异常</string>
+    <string name="upload">正在加载信息</string>
+    <string name="update_right">修改成功</string>
+
 
     <string name="account_tip">请输入用户名</string>
     <string name="password_tip">请输入密码</string>
@@ -77,5 +101,22 @@
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="TicketName">我是票名</string>
+    <string name="PriceTimeLimit">预定信息</string>
+    <string name="ProductUnitName">套票</string>
+    <string name="scenery">地理位置</string>
+    <string name="country">我是国家</string>
+    <string name="introduce">我是介绍</string>
+
+    <string name="scenery_play">景点门票</string>
+    <string name="sing">演唱会门票</string>
+
+
+    <string name="start">请选择初始地</string>
+    <string name="destination">请选择目的地</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="news">请输入信息</string>
 
 </resources>

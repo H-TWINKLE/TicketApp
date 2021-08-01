@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
     >
 
     <com.loopj.android.image.SmartImageView
@@ -15,6 +14,7 @@
         android:layout_marginBottom="5dp"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="5dp"
+        android:src="@drawable/lex"
         />
 
     <TextView

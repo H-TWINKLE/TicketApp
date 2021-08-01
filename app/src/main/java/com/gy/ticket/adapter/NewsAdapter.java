@@ -25,20 +25,22 @@ public  class NewsAdapter extends BaseAdapter {
     private Context context;
     private List<Film> list = new ArrayList<>();
     private List<Sing> list2 = new ArrayList<>();
-    private List<Play> list3 = new ArrayList<>();
+   // private List<Play> list3 = new ArrayList<>();
 
 
-    public NewsAdapter(Context context, List<Film> list, List<Sing> list2,List<Play> list3) {
+    public NewsAdapter(Context context, List<Film> list, List<Sing> list2) {
         this.context = context;
         this.list = list;
         this.list2 = list2;
-        this.list3 = list3;
+      //  this.list3 = list3;
+
+        Log.i("size",list.size()+"  "+list2.size());
 
     }
 
     @Override
     public int getCount() {
-        return list.size()+list2.get(0).getSuggest().size()+list3.get(0).getSuggest().size();
+        return list.size()+list2.get(0).getSuggest().size();
     }
 
     @Override
@@ -64,19 +66,19 @@ public  class NewsAdapter extends BaseAdapter {
             content.setText(list.get(position).getInfo());
             nature.setText(list.get(position).getDate());
         }
-       else if(position<(list.size()+list2.size())){
+       else {
             smartImageView.setImageUrl("https://pimg.damai.cn/perform/project/"+list2.get(0).getSuggest().get(position-list.size()).getFold()
                             +"/"+list2.get(0).getSuggest().get(position-list.size()).getProjectId()+"_n.jpg");
             title.setText(list2.get(0).getSuggest().get(position-list.size()).getProjectName());
             content.setText(list2.get(0).getSuggest().get(position-list.size()).getVenue());
             nature.setText(list2.get(0).getSuggest().get(position-list.size()).getShowTime());
-        }else{
+        }/*else {
             smartImageView.setImageUrl("https://pimg.damai.cn/perform/project/"+list3.get(0).getSuggest().get(position-list.size()-list2.size()).getFold()
                     +"/"+list3.get(0).getSuggest().get(position-list.size()-list2.size()).getProjectId()+"_n.jpg");
             title.setText(list3.get(0).getSuggest().get(position-list.size()-list2.size()).getProjectName());
             content.setText(list3.get(0).getSuggest().get(position-list.size()-list2.size()).getVenue());
             nature.setText(list3.get(0).getSuggest().get(position-list.size()-list2.size()).getShowTime());
-        }
+        }*/
 
 
 

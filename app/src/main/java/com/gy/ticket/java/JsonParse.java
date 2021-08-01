@@ -3,7 +3,6 @@ package com.gy.ticket.java;
 import com.google.gson.reflect.TypeToken;
 import com.gy.ticket.user.Sing;
 import com.google.gson.Gson;
-
 import java.lang.reflect.Type;
 import java.util.List;
 
@@ -12,11 +11,10 @@ import java.util.List;
  */
 
 public class JsonParse {
-    public static List<Sing> getSing(String json) {
+    public static List<Sing> getSingInfo(String json){
         Gson gson = new Gson();
-        Type listType = new TypeToken<List<Sing>>() {
-        }.getType();
-        List<Sing> sing = gson.fromJson(json, listType);
-        return sing;
+        Type listType = new TypeToken<List<Sing>>(){}.getType();
+        List<Sing> singInfos = gson.fromJson(json, listType);
+        return singInfos;
     }
 }

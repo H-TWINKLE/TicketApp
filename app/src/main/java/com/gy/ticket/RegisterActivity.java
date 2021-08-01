@@ -208,7 +208,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                             break;
                         case "3":
                             toast(getString(R.string.account_inside_error));
-                            ;
                             break;
                         case "1":
                             toast(getString(R.string.register_ok));

@@ -34,6 +34,15 @@ public class SharePerfence {
         editor.apply();
     }
 
+    public void setInfo(User user) {
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putString("email", user.getEmail());
+        editor.putString("name", user.getName());
+        editor.putString("tel", user.getTel());
+        editor.apply();
+    }
+
+
     public boolean getShareperfence_login() {
         boolean flag = true;
         if ("-1".equals(sp.getString("id", "-1"))) {
@@ -57,6 +66,11 @@ public class SharePerfence {
         list.add(sp.getString("name", ""));
         list.add(sp.getString("idcard", ""));
         return list;
+    }
+
+    public String get_id() {
+        String id = sp.getString("id", "");
+        return id;
     }
 
 }

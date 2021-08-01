@@ -8,6 +8,7 @@
     tools:context="com.gy.ticket.DestineActivity">
 
     <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_destine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:navigationIcon="?attr/homeAsUpIndicator"

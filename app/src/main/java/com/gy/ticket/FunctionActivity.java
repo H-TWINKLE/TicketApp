@@ -58,6 +58,9 @@ public class FunctionActivity extends Fragment {
                     case 1:
                         startActivity(intent = new Intent(getActivity(), AmusementActivity.class));
                         break;
+                    case 2:
+                        startActivity(intent = new Intent(getActivity(), FormActivity.class));
+                        break;
                     default:
                         break;
                 }

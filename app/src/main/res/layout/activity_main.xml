@@ -112,7 +112,7 @@
             android:layout_height="wrap_content"
             android:text="@string/retrieve"
             android:textColor="#177cb0"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="15dp"
             android:textSize="18sp" />
 
 

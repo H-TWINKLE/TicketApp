@@ -33,7 +33,7 @@ public class NewsActivity extends Fragment {
     private ListView lvnews;
     private List<Film> list = new ArrayList<>();
     private List<Sing> list2 = new ArrayList<>();
-    private List<Play> list3 = new ArrayList<>();
+  //  private List<Play> list3 = new ArrayList<>();
 
     public NewsActivity() {
 
@@ -100,10 +100,10 @@ public class NewsActivity extends Fragment {
                     String text = new String(result, "utf-8");
                     text = "[ " + text + " ]";
                     list2 = JSON.parseArray(text, Sing.class);
+                    adapter = new NewsAdapter(getActivity(), list, list2);
+                    lvnews.setAdapter(adapter);
                 } catch (Exception e) {
                     e.printStackTrace();
-                } finally {
-                    getPlay();
                 }
             }
 
@@ -125,7 +125,7 @@ public class NewsActivity extends Fragment {
 
     }
 
-    private void getPlay() {
+  /*  private void getPlay() {
         RequestParams requestParams = new RequestParams(InitString.Play_url);
         x.http().post(requestParams, new Callback.CommonCallback<byte[]>() {
             @Override
@@ -158,5 +158,5 @@ public class NewsActivity extends Fragment {
             }
         });
 
-    }
+    }*/
 }

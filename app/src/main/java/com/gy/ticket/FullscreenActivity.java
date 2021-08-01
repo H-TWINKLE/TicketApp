@@ -70,8 +70,7 @@ public class FullscreenActivity extends AppCompatActivity implements View.OnClic
         dummy_button.setOnClickListener(this);
 
         ivw_first = (SmartImageView) findViewById(R.id.ivw_first);
-        ivw_first.destroyDrawingCache();
-        ivw_first.setImageUrl(pic_url);
+        ivw_first.setImageUrl(pic_url,R.drawable.full);
 
 
     }

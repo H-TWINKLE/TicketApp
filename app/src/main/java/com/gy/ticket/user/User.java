@@ -43,6 +43,13 @@ public class User {
 
     }
 
+    public User(String email, String tel, String name) {
+        this.email = email;
+        this.tel = tel;
+        this.name = name;
+
+    }
+
     public String getDate() {
         return date;
     }

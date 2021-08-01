@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         init();
         apply();
         get_admin();
-        new Util().delete(MainActivity.this);
+      //  new Util().delete(MainActivity.this);
 
     }
 
@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void apply() {
         bt_main_login.setOnClickListener(this);
         tv_main_register.setOnClickListener(this);
+        tv_main_getpass.setOnClickListener(this);
 
     }
 
@@ -93,8 +94,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this, RegisterActivity.class));
                 break;
             case R.id.tv_main_getpass:
-                startActivity(new Intent(MainActivity.this, PassActivity.class));
+                startActivity(new Intent(MainActivity.this, ForgetPassActivity.class));
                 break;
+
             default:
                 break;
         }

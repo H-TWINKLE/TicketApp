@@ -9,6 +9,7 @@
     tools:context="com.gy.ticket.TravelActivity">
 
     <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_travel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:navigationIcon="?attr/homeAsUpIndicator"
@@ -26,7 +27,8 @@
 
     <TableLayout
         android:gravity="center"
-        android:layout_marginTop="10dp"
+        android:shrinkColumns="0,1"
+        android:stretchColumns="0,1"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -36,37 +38,34 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_marginEnd="60dp"
                 android:id="@+id/iv_travel_airplane"
-                android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 app:srcCompat="@drawable/airplane" />
 
             <ImageView
                 android:id="@+id/iv_travel_train"
-                android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 app:srcCompat="@drawable/train" />
         </TableRow>
 
         <TableRow
             android:gravity="center"
-            android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_marginEnd="60dp"
                 android:id="@+id/iv_travel_bus"
-                android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
 
                 app:srcCompat="@drawable/bus" />
 
             <ImageView
                 android:id="@+id/iv_travel_boat"
-                android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 app:srcCompat="@drawable/boat" />
 
 
